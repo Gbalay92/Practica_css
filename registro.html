@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Bike Shop</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1><img src="logo.png" alt="Bike Shop" width="500px" height="250"><br></h1>
+        <nav>
+            <ul>
+                <li><a href="bikeShop.html">Inicio</a></li>
+                <li><a href="producto.html">Productos</li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li id="actual">Registro</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <table id="registro">
+                <tr>
+                    <td>
+                        <label for="nombre" >Nombre</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombre" id="nombre" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="apellidos">Apellidos</label>
+                    </td>
+                    <td>
+                        <input type="text" name="apellidos" id="apellidos" value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Correo">Correo electrónico</label>
+                    </td>
+                    <td>
+                        <input type="text" name="correo" id="correo"  value="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="nombreUsuario">Nombre usuario</label>
+                    </td>
+                    <td>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" value="" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Contraseña</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" minlength="1" maxlength="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password2">Repetir Contraseña</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password2" id="password2" minlength="1" maxlength="20" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Telefono">Teléfono</label>
+                    </td>
+                    <td>
+                        <input type="text" name="telefono" id="telefono" placeholder="123456789" pattern="[0-9]{9}" minlength="9" maxlength="9" size="10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Direccion">Direccion</label>
+                    </td>
+                    <td>
+                        <textarea name="Direccion" id="Direccion" rows="4" cols="20" required></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Enviar datos" id="Enviar">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+    <footer>
+        <small><p>Página creada por Gonzalo Balay Losada(<a href="mailto: g.balay@liceolapaz.com" style="color: red">g.balay@liceolapaz.com</a>)</p>
+            <p>&#169; 2022. Todos los derechos reservados</p>
+        </small>
+    </footer>
+</body>
+</html>
